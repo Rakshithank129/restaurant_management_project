@@ -6,4 +6,6 @@ def about(request):
     """
     Render the about page for the restaurant.
     """
-    return render(request,"about.html")   
+    return render(request,"about.html")
+
+def index()   
