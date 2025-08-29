@@ -8,4 +8,18 @@ def about(request):
     """
     return render(request,"about.html")
 
-def index()   
+def index(request):
+    """
+    Render the homepage with restaurant name from database
+    """   
+    restaurant = Restaurant.objects.first()  # considering the single record
+    context = {
+        "restaurant_name" : restaurant.name if restaurant else "Our Restaurant"
+
+    }
+    return render(
+        request=request,
+        template_name = "index.html",
+        content = content 
+    )
+
