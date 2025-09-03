@@ -1,7 +1,17 @@
 {% extend 'base.html' %}
 {% block content %}
-    <div class="container">
-        <h1>Welcome to {{ restaurant_name}}!</h1>
+
+    <div style="max-width:800px; marging:50px auto; padding:20px; text-align:center; font-family:Arial, sans-serif">
+        <h1 style="font-size:36px; color:Indigo; marging-bottom:20px">
+            Welcome to {{ restaurant_name}}!
+        </h1>
         <p>Enjoy the Best Dining Experience in City</p>
+        
+
+        <div style="margin-top:30px">
+            <a href="{% url 'about'%}" style="display:inline-block; padding:12px 25px; font-size:16px; background-color:magenta; color:white; text-decoration:none; border-radius:6px;transition:0.3s;">
+                Learn More About Us
+            </a>
+        </div>
     </div>
-{% endblock %}
+{% endblock %}  
