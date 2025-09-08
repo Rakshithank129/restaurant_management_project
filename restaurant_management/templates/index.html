@@ -1,15 +1,17 @@
 {% extends 'base.html' %}
 {% block content %}
 
-    <div style="max-width:800px; marging:50px auto; padding:20px; text-align:center; font-family:Arial, sans-serif">
-        <h1 style="font-size:36px; color:Indigo; marging-bottom:20px">
+    <div class="container text-center my-5">
+        <h1 class="display-4 fw-bold text-primary">
             Welcome to {{ restaurant_name}}!
         </h1>
-        <p>Enjoy the Best Dining Experience in City</p>
+        <p class="lead text-muted mb-4">
+            Enjoy the Best Dining Experience in City
+        </p>
         
 
         <div style="margin-top:30px">
-            <a href="{% url 'about'%}" style="display:inline-block; padding:12px 25px; font-size:16px; background-color:magenta; color:white; text-decoration:none; border-radius:6px;transition:0.3s;">
+            <a href="{% url 'about'%}" class="btn btn-lg btn-success px-4 py-2 shadow">
                 Learn More About Us
             </a>
         </div>
